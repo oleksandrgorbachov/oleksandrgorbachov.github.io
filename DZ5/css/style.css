@@ -67,16 +67,13 @@ a {
 
 /* Box_menu */
 .box{
-    margin: auto;
+    margin: 0 auto;
     height: 900px;
     width: 541px;
-    margin-top: 213px;
+    padding-top: 203px;
 }
 .box .wrapper{
     height: 670px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background: rgba(0,0,0,0.5);
     font-family: 'Helvetica Neue Regular', 'Arial';
 }
@@ -146,8 +143,9 @@ a {
     margin-left: 134px;
 }
 .layer p{
-    margin: -26px;
     color: #999999;
+    position: relative;
+    top: -25px;
 }
 .maine_form{
     width: 250px;

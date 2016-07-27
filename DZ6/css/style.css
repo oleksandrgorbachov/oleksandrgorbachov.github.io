@@ -20,8 +20,6 @@ header {
 	display: flex;
 	flex-flow: row wrap;
 	width: 909px;
-	flex: 0 0 100%;
-	height: 305px;
 	align-self: center;
 	justify-content: center;
 }
@@ -120,13 +118,32 @@ header {
 }
 
 /*котакты*/
-
+.logo-title{
+    height: 248px;
+}
 .logo {
 	margin-top: 10px;
     width: 909px;
     height: 235px;
 }
-
+.logo-email-zazor{
+    font-size: 63px;
+    padding-right: 10px;
+}
+.logo-email{
+    position: absolute;
+    top: 139px;
+    color: #cfcece;
+    left: 224px;
+    font-size: 33px;
+}
+.logo-text{
+    position: relative;
+    top: -99px;
+    left: 70px;
+    font-size: 29px;
+    color: #aa1400;
+}
 /*NAVIGATION*/
 
 .menu {
