@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/stylesheet.css">
@@ -14,9 +17,7 @@
 <div class="top-bar">
     <header>
     <div class="wrapper-section">
-        <div class="header-logo">
-            <img src="img/logo.png" alt="PINGBULLER" class="header-logo__img">
-        </div>
+        <div class="header-logo"></div>
         <nav>
             <ul class="main-menu">
                 <li class="main-menu-item"><a class="main-menu__line" href="#">HOME</a></li>
@@ -55,7 +56,6 @@
         </div>
         </div>
     </section>
-    <div class="wrapper-section">
     <div class="slider-radio">
         <input id="button-1" type="radio" name="radio-set" class="sp-selector" checked="checked">
 	    <label for="button-1" class="button-label"></label>
@@ -65,7 +65,6 @@
 	    <label for="button-3" class="button-label"></label>
 	    <input id="button-4" type="radio" name="radio-set" class="sp-selector">
 	    <label for="button-4" class="button-label"></label>
-    </div>
     </div>
     </div>
     </div>
@@ -121,19 +120,18 @@
                     <div class="info-from-updates__title">Recent Updates</div>
                 <ul class="info-from-updates-list">
                     <li class="info-from-updates-list-item">
-                        <img src="img/from-post.png" alt="" class="info-from-updates-list-item__img">
                         <div class="info-from-updates-list-item__title">Nunc turpis neque <a href="#" class="text__none3"> feugiat eget</a> </div>
-                        <div class="info-blog-updates-list-item__details">Posted by <span class="author">Admin</span> on March 13<span class="date"> 2012</span><span class="category"> in Recent News</span></div>
+                        <div class="info-from-updates-list-item__details">Posted by <span class="author">Admin</span> on March 13<span class="date"> 2012</span><span class="category"> in Recent News</span></div>
                     </li>
                     <li class="info-from-updates-list-item">
-                        <img src="img/from-post.png" alt="" class="info-from-updates-list-item__img">
+                        
                         <div class="info-from-updates-list-item__title">Nunc turpis neque <a href="#" class="text__none3"> feugiat eget</a></div>
-                        <div class="info-blog-updates-list-item__details">Posted by <span class="author">Admin</span> on March 13 <span class="date"> 2012</span><span class="category"> in Recent News</span></div>
+                        <div class="info-from-updates-list-item__details">Posted by <span class="author">Admin</span> on March 13 <span class="date"> 2012</span><span class="category"> in Recent News</span></div>
                     </li>
                     <li class="info-from-updates-list-item">
-                        <img src="img/from-post.png" alt="" class="info-from-updates-list-item__img">
+                        
                         <div class="info-from-updates-list-item__title">Nunc turpis neque <a href="#" class="text__none3"> feugiat eget</a></div>
-                        <div class="info-blog-updates-list-item__details">Posted by <span class="author">Admin</span> on March 13 <span class="date"> 2012</span><span class="category"> in Recent News</span></div>
+                        <div class="info-from-updates-list-item__details">Posted by <span class="author">Admin</span> on March 13 <span class="date"> 2012</span><span class="category"> in Recent News</span></div>
                     </li>
                 </ul>
                 <a href="" class="info-from-updates__link">Read more here</a>
@@ -148,12 +146,12 @@
        <div class="clients-section">
         <div class="wrapper-section">
             <div class="clients-holder">
-                <div class="clints__img"><img src="img/clients_logo_01.png" alt="" class="clients-holder__image1"></div>
-                <div class="clints__img"><img src="img/clients_logo_02.png" alt="" class="clients-holder__image1"></div>
-                <div class="clints__img"><img src="img/clients_logo_03.png" alt="" class="clients-holder__image1"></div>
-                <div class="clints__img"><img src="img/clients_logo_04.png" alt="" class="clients-holder__image1"></div>
-                <div class="clints__img clints__img1"><img src="img/clients_logo_05.png" alt="" class="clients-holder__image"></div>
-                <div class="clints__img"><img src="img/clients_logo_06.png" alt="" class="clients-holder__image1"></div>
+                <div class="clints__img1"></div>
+                <div class="clints__img2"></div>
+                <div class="clints__img3"></div>
+                <div class="clints__img4"></div>
+                <div class="clints__img5 clints__img1"></div>
+                <div class="clints__img6"></div>
             </div>
         </div>
         </div>
@@ -162,20 +160,17 @@
        <div class="updates-section">
         <div class="wrapper-section">
           <div class="updates-column--section">
-           <div class="updates-column--none">
-            <div class="updates-column">
-                <div class="updates-column-logo">
-                    <img src="img/logo_copy.png" alt="" class="updates-column-logo__image">
-                </div>                
+          
+            <div id="updates-column--none" class="updates-column">
+                <div class="updates-column-logo"></div>                
                 <div class="updates-column__copyright">Copyright 2013, Pingbull AS</div>
                 <p class="updates-column__text">Nunc turpis neque, 
 feugiat eget eleif- end et, lacinia non neque. Praesent rhoncus ultrices
  posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae 
 lectus eu libero pellentesque pul-</p>
             </div>
-            </div>
-            <div class="updates-column--none">
-            <div class="updates-column">
+         
+            <div id="updates-column--none" class="updates-column">
                 <h3 class="updates-column__title">Recent comments</h3>
                 <p class="updates-column__text">Nunc turpis neque, 
 feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices 
@@ -183,7 +178,7 @@ posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae
 lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis 
 pulvinar bibendum in, venenatis quis</p>
             </div>
-            </div>
+          
             <div class="updates-column">
                 <h3 class="updates-column__title">News categories</h3>
                 <p class="updates-column__text">Nunc turpis neque, 
@@ -192,8 +187,8 @@ posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae
 lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis 
 pulvinar bibendum in, venenatis quis</p>
             </div>
-            <div class="updates-column--none1">
-            <div class="updates-column">
+           
+            <div class="updates-column updates-column--none1">
                 <h3 class="updates-column__title">News categories</h3>
                 <p class="updates-column__text">Nunc turpis neque, 
 feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices 
@@ -201,7 +196,8 @@ posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae
 lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis 
 pulvinar bibendum in, venenatis quis</p>
             </div>
-            <div class="updates-column">
+            
+            <div class="updates-column updates-column--none1">
                 <h3 class="updates-column__title">News categories</h3>
                 <p class="updates-column__text">Nunc turpis neque, 
 feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices 
@@ -209,7 +205,7 @@ posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae
 lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis 
 pulvinar bibendum in, venenatis quis</p>
             </div>
-            </div>
+
             </div>
         </div>
         </div>
