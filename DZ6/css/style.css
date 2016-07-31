@@ -40,7 +40,10 @@ header {
     margin-left: 5px;
     margin-right: 6px;
 }
-
+.number a{
+	text-decoration: none;
+	color: #5e696d;
+}
 .avtoriz {
 	padding: 6px;
 }
