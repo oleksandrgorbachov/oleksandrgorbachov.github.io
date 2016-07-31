@@ -121,7 +121,6 @@ ul.nav li ul li a:after{
     margin: 30px 0 0;
     width: 200px;
     height: 510px;
-    padding-left: 5px;
     float: left;
     text-align: center;
     background: #edeef0;
@@ -141,7 +140,6 @@ ul.nav li ul li a:after{
     margin: 30px 0 0;
     width: 200px;
     height: 510px;
-    padding-left: 5px;
     float: right;
     text-align: center;
     background: #edeef0;
