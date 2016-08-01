@@ -5,17 +5,18 @@
 }
 
 html, body  {
+    background-color: white;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    font-size: 1em;
+    height: 100%;
 }
-
-.page {
-  display: flex;
-  flex-direction: column;
-  margin-top: 15px;
-  min-width: 909px;
+.wrapper{
+    width: 910px;
+    height: 100%;
+    margin: 0 auto;
 }
-
 header {
 	display: flex;
 	flex-flow: row wrap;
@@ -40,10 +41,7 @@ header {
     margin-left: 5px;
     margin-right: 6px;
 }
-.number a{
-	text-decoration: none;
-	color: #5e696d;
-}
+
 .avtoriz {
 	padding: 6px;
 }
@@ -123,6 +121,10 @@ header {
 /*котакты*/
 .logo-title{
     height: 248px;
+    width: 100%;
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .logo {
 	margin-top: 10px;
@@ -130,22 +132,22 @@ header {
     height: 235px;
 }
 .logo-email-zazor{
-    font-size: 63px;
-    padding-right: 10px;
+    font-size: 55px;
 }
 .logo-email{
     position: absolute;
-    top: 139px;
+    top: 110px;
     color: #cfcece;
     left: 224px;
     font-size: 33px;
 }
 .logo-text{
     position: relative;
-    top: -99px;
-    left: 70px;
+    top: 143px;
     font-size: 29px;
     color: #aa1400;
+    width: 255px;
+    text-align: right;
 }
 /*NAVIGATION*/
 
@@ -385,7 +387,7 @@ header {
 }
 
 ul {
-	padding-left: 74px;
+	padding-left: 55px;
 }
 
 .tires_marker,
@@ -479,7 +481,6 @@ main {
 /*FOOTER - start*/
 
 footer {
-  flex: 0 0 100%;
   display: flex;
   flex-flow: column nowrap;
 }
