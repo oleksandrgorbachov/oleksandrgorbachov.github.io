@@ -7,7 +7,7 @@
     font-weight: normal;
     font-style: normal;
 }
-body{
+body {
     width: 100%;
     background: url(../img/Background-copy.png) no-repeat;
     background-size: cover;
@@ -138,21 +138,41 @@ a {
     font-family: "Arial";
 }
 .layer{
-    width: 276px;
-    height: 55px;
-    margin-left: 134px;
+	overflow: hidden;
+	display: block;
+	width: 250px;
+	margin: 20px auto;
+	text-align: center;
+	font-size: 105%;
+	color: #999;
 }
-.layer p{
-    color: #999999;
-    position: relative;
-    top: -25px;
+
+.layer:before,
+.layer:after {
+	content: "";
+	display: inline-block;
+	width: 250px;
+	height: 2px;
+	background: linear-gradient(to bottom, #999, #000);
+	vertical-align: middle;
+	position: relative;
+}
+
+.layer:before {
+	margin-left: -100%;
+	left: -6px;
+}
+
+.layer:after {
+	margin-right: -100%;
+	right: -6px;
 }
 .maine_form{
     width: 250px;
     margin: 0 auto;
 }
 .form{
-    width: 229px;
+    width: 209px;
     height: 30px;
     margin-bottom: 20px;
 }
@@ -179,7 +199,7 @@ a {
     background: url(../img/Button-copy.png);
 }
 input{
-    padding-left: 20px;
+    padding: 0 20px;
     font-size: 14px;
     border: 0;
     color: #fffcfc;
